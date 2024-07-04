@@ -1,0 +1,113 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/hero-main-image.png') no-repeat;
+    border-radius: 20px;
+    background-size: cover;
+    position: relative;
+}
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+.header-contents p {
+    color: white;
+    font-size: 1vw;
+}
+.header-contents button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+}
+@media (max-width: 1050px) {
+    .header {
+        height: 38vw;
+    }
+    .header-contents {
+        max-width: 45%;
+    }
+}
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 55%;
+    }
+    .header-contents p {
+        display: none;
+    }
+    .header-contents button {
+        padding: 2vw 4vw;
+    }
+}
+
+.offer-card-heading h1 {
+    color: #262626;
+    font-weight: 500;
+}
+
+.offer-card-desc {
+    max-width: 60%;
+    color: #808080;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.header-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.header-card1 {
+    flex: 1;
+    height: 500px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.header-card2 {
+    flex: 1;
+    height: 500px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.header-card3 {
+    flex: 1;
+    height: 500px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.header-card4 {
+    flex: 1;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.header-card1 img, .header-card2 img, .header-card3 img, .header-card4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
